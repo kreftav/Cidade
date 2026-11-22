@@ -323,7 +323,9 @@ input[type="range"] { flex: 1; min-width: 0; height: 28px; accent-color: var(--c
 .foot-grid a { color: var(--fg); text-decoration: none; background: linear-gradient(var(--accent-text), var(--accent-text)) 0 100% / 0 1px no-repeat; transition: background-size .5s var(--ease); }
 .foot-grid a:hover { background-size: 100% 1px; }
 .foot-brand p { color: var(--muted); margin-top: 20px; max-width: 24em; }
-.copy { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--hair); color: var(--muted); font-size: 14px; }
+.copy { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--hair); color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+.copy a { color: var(--fg); font-weight: 700; text-decoration: none; background: linear-gradient(var(--accent-text), var(--accent-text)) 0 100% / 100% 1px no-repeat; transition: background-size .5s var(--ease); }
+.copy a:hover { background-size: 0 1px; }
 
 .minibar { position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: var(--z-mini); }
 .minibar-in { max-width: 1000px; margin-inline: auto; display: flex; align-items: center; gap: 16px; min-height: 80px; padding: 10px 14px 10px 12px; border-radius: 999px; position: relative; }
@@ -554,7 +556,7 @@ input[type="range"] { flex: 1; min-width: 0; height: 28px; accent-color: var(--c
         </ul>
       </div>
     </div>
-    <p class="copy">© 2026 Rádio Cidade 99.9 FM. Todos os direitos reservados.</p>
+    <p class="copy"><span>© 2026 Rádio Cidade 99.9 FM. Todos os direitos reservados.</span> <span class="credit">Site desenvolvido por <a href="https://dev.vskgroup.com.br" target="_blank" rel="noopener">VSK Dev</a></span></p>
   </div>
 </footer>
 
